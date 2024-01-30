@@ -7,16 +7,24 @@
 
 import SwiftUI
 
-struct Color {
-//    let background = Color("backgroundColor")
+struct CustomColor {
+    static let primaryColor = Color("backgroundColor")
 }
 
+
 struct ViewHome: View {
+    
     var body: some View {
         NavigationView {
             VStack{
-                TodayListView()
+                VStack {
+                    TodayListView(titleList: "Hoje")
+                    Divider()
+                }
+                .frame(width: .infinity, height: 450)
+                TodayListView(titleList: "Amanha")
             }
+            .background(CustomColor.primaryColor)
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
                     Button {
@@ -30,6 +38,7 @@ struct ViewHome: View {
             }
         }
     }
+    
 }
 
 #Preview {
