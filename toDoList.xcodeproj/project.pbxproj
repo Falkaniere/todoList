@@ -16,6 +16,8 @@
 		653C75262B687C3700609B96 /* ViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C75252B687C3700609B96 /* ViewHome.swift */; };
 		653C75282B687C9800609B96 /* TodayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C75272B687C9800609B96 /* TodayListView.swift */; };
 		653C752A2B687DE700609B96 /* ButtonHideListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C75292B687DE700609B96 /* ButtonHideListView.swift */; };
+		656ECF442B6B2D2700AE01AD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656ECF432B6B2D2700AE01AD /* HomeViewModel.swift */; };
+		656ECF462B6B345700AE01AD /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656ECF452B6B345700AE01AD /* CreateTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		653C75252B687C3700609B96 /* ViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHome.swift; sourceTree = "<group>"; };
 		653C75272B687C9800609B96 /* TodayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayListView.swift; sourceTree = "<group>"; };
 		653C75292B687DE700609B96 /* ButtonHideListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonHideListView.swift; sourceTree = "<group>"; };
+		656ECF432B6B2D2700AE01AD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		656ECF452B6B345700AE01AD /* CreateTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateTaskView.swift; path = ../../../../../../.Trash/CreateTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 		653C751C2B687A7000609B96 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				656ECF452B6B345700AE01AD /* CreateTaskView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 		653C751D2B687A7700609B96 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				656ECF432B6B2D2700AE01AD /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -368,7 +374,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				653C752A2B687DE700609B96 /* ButtonHideListView.swift in Sources */,
+				656ECF442B6B2D2700AE01AD /* HomeViewModel.swift in Sources */,
 				653C74EC2B686CB300609B96 /* toDoListApp.swift in Sources */,
+				656ECF462B6B345700AE01AD /* CreateTaskView.swift in Sources */,
 				653C75282B687C9800609B96 /* TodayListView.swift in Sources */,
 				653C75262B687C3700609B96 /* ViewHome.swift in Sources */,
 			);
@@ -534,6 +542,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"toDoList/Preview Content\"";
+				DEVELOPMENT_TEAM = S357R5N2VM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -562,6 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"toDoList/Preview Content\"";
+				DEVELOPMENT_TEAM = S357R5N2VM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

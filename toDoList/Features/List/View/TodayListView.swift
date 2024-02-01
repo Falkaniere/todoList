@@ -38,7 +38,7 @@ struct TodayListView: View {
                         } label: {
                             Image(systemName: task.isDone ? "checkmark.square" : "square")
                         }
-                        Text(task.task)
+                        task.isDone ? Text(task.task).strikethrough() : Text(task.task)
                     }
                     .listRowSeparator(.hidden)
                 }

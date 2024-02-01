@@ -13,6 +13,7 @@ struct CustomColor {
 
 
 struct ViewHome: View {
+    @State var isPresentingSheet = false
     
     var body: some View {
         NavigationView {
@@ -28,7 +29,7 @@ struct ViewHome: View {
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
                     Button {
-                        print("OK")
+                        isPresentingSheet = true
                     } label: {
                         Image(systemName: "plus.circle.fill")
                             .foregroundColor(.black)
@@ -37,6 +38,9 @@ struct ViewHome: View {
                 }
             }
         }
+        .sheet(isPresented: $isPresentingSheet, content: {
+            CreateTaskView()
+        })
     }
     
 }
